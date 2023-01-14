@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validation Form</title>
+</head>
+<body>
+    <h4>New Employee</h4>
+    <form id="employeeForm">
+        <div class="container">
+        <div>
+        <label> <h4>Enter Name</h4> <input type="text" id="name" required></label></div>
+        <div>
+        <label><h4>Enter Profession</h4> <input type="text" id="profession" required></label></div>
+        <div>
+        <label><h4>Enter Age</h4><input type="number" id="age" min="18" max="90" required></label></div>
+    </div>
+        <button type="button" onclick="addEmployee()">Add User</button>
+      </form>
+      <div id="error" style="color:red;"></div>
+      <div id="success" style="color:skyblue;"></div>
+      <h4>Added Employees</h4>
+      <table id="employeeTable">
+        
+        <tbody id="employeeList"></tbody>
+      </table>
+      
+      <script src="script.js"></script>
+</body>
+</html>
